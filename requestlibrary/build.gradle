@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
 group="com.github.wybiao"
 
 android {
@@ -34,3 +35,4 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.8.0'
     api project(':requestannotation')
 }
+//apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
