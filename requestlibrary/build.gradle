@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'maven'
 group="com.github.wybiao"
 
 android {
@@ -23,16 +22,13 @@ android {
         }
     }
 
-}
 
+}
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:29.+'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.squareup.okhttp3:okhttp:4.8.0'
     api project(':requestannotation')
 }
 //apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+//apply from :"../publishAndroidLib.gradle"
